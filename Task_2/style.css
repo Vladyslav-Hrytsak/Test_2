@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* ================== BLOCKS ================== */
+
+.block {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 8px;
+}
+
+/* ================== USERS ================== */
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user {
+    flex: 1 1 45%;
+}
+
+/* ================== BUTTON ================== */
+
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: 1px solid #666;
+    background: #ddd;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ================== USER DETAILS ================== */
+
+.user-info {
+    margin-bottom: 16px;
+}
+
+.posts-btn {
+    width: 90%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* ================== POSTS ================== */
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    flex: 1 1 18%;
+}
+
+/* ================== POST DETAILS ================== */
+
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment {
+    flex: 1 1 23%;
+}
+
+/* ================== ADAPTIVE ================== */
+
+@media (max-width: 900px) {
+    .post {
+        flex: 1 1 30%;
+    }
+
+    .comment {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .user {
+        flex: 1 1 100%;
+    }
+
+    .post {
+        flex: 1 1 100%;
+    }
+
+    .comment {
+        flex: 1 1 100%;
+    }
+}
